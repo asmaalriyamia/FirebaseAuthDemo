@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sasmob.firebaseauthdemo.MainActivity"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:background="#b1af8d">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/lockup" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Your email:"
+       />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:hint="your email"
+        android:inputType="textPersonName" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_password"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Your Password:" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:hint="your Password"
+            android:inputType="textPersonName">
+
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#837155"
+        android:onClick="createNewUser"/>
+
+
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+        android:layout_marginLeft="50dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Registerd? " />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:background="#b1af8d"
+            android:onClick="signIn"
+            android:textColor="#837155"/>
+
+</LinearLayout>
+
+</LinearLayout>
